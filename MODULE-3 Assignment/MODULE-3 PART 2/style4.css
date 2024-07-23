@@ -1,0 +1,53 @@
+nav {
+       background-color: #569ee5;  /* Change background color here */
+       display: flex;
+       justify-content: space-between; /* Distribute links evenly */
+       padding: 10px 20px;
+     }
+     
+     ul {
+       list-style: none; 
+       margin: 0;
+       padding: 0;
+     }
+     
+     li {
+       display: inline-block;
+       margin-right: 20px;
+     } 
+     
+     li:last-child { 
+        margin-right: 0; 
+        }
+     
+     a {
+       color: #ffffff; /* Default text color */
+       text-decoration: none;
+       padding: 5px 10px;
+     }
+     
+     a:hover {
+       color: #000000; /* Text color on hover */
+       font-weight: bold; /* Optional: add boldness on hover */
+     }
+
+     li:first-child a { 
+        border: 1px solid #aa242d; /* Solid border for first item */
+        } 
+        
+        li:nth-child(2) a { 
+              border: 2px dotted #ccc; /* Dotted border for second item */ 
+       } 
+
+               li:nth-child(3) a { 
+                     border: 3px dashed #1268c4; /* Dashed border for third item */ 
+              } 
+              
+              li:nth-child(4) a {
+                      border: 1px double #b62c2c; /* Double border for fourth item */
+                      } 
+                      
+                      li:last-child a { 
+                            border: 1px groove #999; /* Groove border for last item */ 
+                     }  
+     

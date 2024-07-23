@@ -1,0 +1,20 @@
+body {
+       background-color: #222; /* Dark background color */
+       color: #ddd; /* Light foreground text color */
+       font-family: Arial, sans-serif; /* Clean and modern font */
+       margin: 0; /* Remove default margins */
+       padding: 20px; /* Add some padding */
+     }
+     
+     h1 {
+       text-align: center; /* Center align the heading */
+       font-size: 2em; /* Increase heading size for emphasis */
+       color: #fff; /* Lighter color for heading */
+       margin-bottom: 10px; /* Add spacing after the heading */
+     }
+     
+     p {
+       line-height: 1.5; /* Improve readability with line spacing */
+       font-size: 16px; /* Comfortable paragraph font size */
+     }
+     

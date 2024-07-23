@@ -1,0 +1,16 @@
+h1 { 
+       text-align: center;
+       color: blue;
+} 
+
+.image-container {
+       text-align: center; /* Not strictly necessary, but can help with some inline elements */
+   }
+   
+   .image-container img {
+       margin: 0 auto; /* Center image horizontally */
+   }
+
+   p {
+       text-align: center;
+   }
