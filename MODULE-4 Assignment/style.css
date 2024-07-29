@@ -1,0 +1,32 @@
+body {
+  background-color: #222;
+  color: #fff;
+  margin: 0;
+}
+
+.sidebar {
+  float: left;
+  width: 200px;
+  background-color: #333;
+  height: 100vh; /* Adjust height as needed */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 200px; /* Match sidebar width */
+  padding: 20px;
+}

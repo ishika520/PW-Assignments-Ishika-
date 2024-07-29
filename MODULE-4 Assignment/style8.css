@@ -1,0 +1,30 @@
+body{
+       background-image: url(Screenshot\ 2024-07-29\ 154813.png);
+}
+.markbox-button {
+       /* Basic button styles */
+       background-color: #424141;
+       border: 1px solid #eeecec;
+       padding: 10px 20px;
+       cursor: pointer;
+     
+       /* Markbox-specific styles */
+       position: relative;
+     }
+     
+     .markbox-button::after {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay */
+       opacity: 0; /* Initially hidden */
+       transition: opacity 0.3s ease-in-out;
+     }
+     
+     .markbox-button.marked::after {
+       opacity: 1; /* Show overlay when marked */
+     }
+     

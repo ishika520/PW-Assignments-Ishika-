@@ -1,0 +1,26 @@
+body{
+     color: rgb(252, 252, 252);
+       background-color: black;
+}
+
+div{
+       color: rgb(237, 236, 241);
+       
+}
+
+.container {
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+   }
+   
+   .content {
+       flex: 1;
+       padding: 20px;
+   }
+   
+   .image {
+       max-width: 300px;
+       margin-top: 20px;
+   }
+   
