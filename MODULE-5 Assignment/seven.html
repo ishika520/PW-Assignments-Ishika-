@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Alert Bar</title>
+    <style>
+        .alert-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f48d86; /* Red background */
+            color: rgb(244, 10, 10); /* Red text */
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 9999; /* Ensure it stays on top */
+        }
+        .content {
+            margin-top: 60px; /* Space for the alert bar */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-bar">
+       <img src="warn.png" alt="warn" style="text-align: left;">
+        This is a fixed alert bar at the top of the screen!
+        <img src="warn(i).png" alt="warn" style="text-align: end;">
+    </div>
+    
+</body>
+</html>

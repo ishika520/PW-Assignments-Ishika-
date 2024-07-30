@@ -1,0 +1,44 @@
+body{
+       background-color: gray;
+}
+
+div{
+       text-align: center;
+}
+
+.course-container {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   
+   .course-card {
+       background-color: aliceblue;
+       width: calc(25% - 35px); /* Adjust width as needed */
+       margin: 20px;
+       border: 1px solid #ccc;
+       padding: 30px;
+       box-sizing:border-box;
+   }
+
+   .course2-card {
+       background-color: aliceblue;
+       width: calc(25% - 35px); /* Adjust width as needed */
+       margin: 10px;
+       border: 1px solid #ccc;
+       padding: 20px;
+       box-sizing:border-box;
+   }
+   
+   .course3-card {
+       background-color: aliceblue;
+       width: calc(25% - 35px); /* Adjust width as needed */
+       margin: 20px;
+       border: 1px solid #ccc;
+       padding: 30px;
+       box-sizing:border-box;
+   }
+
+
+
+   

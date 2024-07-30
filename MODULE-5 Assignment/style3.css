@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1; /* Ensures main content takes up available space */
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styles for logo, menu, products, and contact sections */
