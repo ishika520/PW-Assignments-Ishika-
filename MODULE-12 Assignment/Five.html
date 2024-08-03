@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shipping Estimator</title>
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+  <div class="shipping-form">
+    <label for="packageType">Select Package Type:</label>
+    <select id="packageType">
+      <option value="standard">Standard</option>
+      <option value="express">Express</option>
+      <option value="overnight">Overnight</option>
+    </select>
+    <button onclick="calculateDeliveryTime()">Estimate Delivery</button>
+    <p id="deliveryTime"></p>
+  </div>
+  <script src="Five.js"></script>
+</body>
+</html>
