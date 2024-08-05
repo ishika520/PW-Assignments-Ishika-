@@ -1,0 +1,39 @@
+<h1>Q7. Explain 3 schema architecture along with its advantages.</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body>
+       The <b>three-schema architecture</b> is a framework used to describe the structure of a database system. It separates the database into three different levels: internal, conceptual, and external. This separation helps manage data abstraction and independence.
+
+<h2>Levels of Three-Schema Architecture</h2> <br>
+<b>1. Internal Level: </b> <br>
+<b>Description:</b> This level deals with the physical storage of data. It defines how data is stored in the database, including data structures, indexing, and access paths. <br>
+<b>Purpose:</b> To optimize storage space and improve data retrieval efficiency. <br>
+
+<b>2. Conceptual Level:</b> <br>
+<b>Description:</b> This level represents the logical structure of the entire database. It describes what data is stored and the relationships among those data. <br>
+<b>Purpose:</b> To provide a unified view of the data, abstracting away the physical details. <br>
+<b>3. External Level: </b> <br>
+<b>Description:</b> This level involves multiple user views. Each user or user group can have a different view of the database tailored to their needs. <br>
+<b>Purpose:</b> To provide customized views of the data for different users, enhancing usability and security. <br> <br>
+
+<h2>Advantages of Three-Schema Architecture</h2> <br>
+<b>1. Data Independence:</b>
+Changes in the internal schema do not affect the conceptual schema, and changes in the conceptual schema do not affect the external schema. This separation allows for easier database maintenance and evolution. <br>
+<b>2. Improved Security:</b>
+       By providing different views for different users, sensitive data can be hidden from unauthorized users. This enhances data security and privacy. <br>
+
+<b>3. Simplified Database Management:</b>
+       The separation of concerns makes it easier to manage and maintain the database. Each level can be modified independently without affecting the others <br>
+
+<b>4. Enhanced Performance:</b>
+       The internal level can be optimized for performance without affecting the logical structure of the database. This allows for better performance tuning. <br>
+
+<b>5. Data Consistency and Integrity:</b>
+       The conceptual schema ensures that data is consistent and maintains integrity across different user views
+</body>
+</html>

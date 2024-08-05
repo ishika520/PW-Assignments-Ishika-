@@ -1,0 +1,41 @@
+<h1>Q4. Explain 5 challenges of file-based storage system which was tackled by DBMS?</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body>
+       5 Challenges of File-Based Storage Systems Tackled by DBMS
+File-based storage systems, while simple, face significant limitations when handling large and complex datasets. These challenges were addressed by the development of Database Management Systems (DBMS). Here are five key issues:
+
+<h3>1. Data Redundancy and Inconsistency</h3>
+
+<b>Challenge:</b> File systems often lead to data duplication, as the same information might be stored in multiple files. This redundancy wastes storage space and increases the risk of inconsistencies. <br> 
+<b>Solution:</b> DBMS ensures data integrity by storing data in a normalized form, eliminating redundancy and reducing the chances of inconsistencies.
+
+
+<h3>Data Isolation</h3>
+
+<b>Challenge:</b> Data in file systems is typically isolated within individual files, making it difficult to share and integrate information across different applications or departments. <br>
+<b>DBMS Solution:</b> DBMS provides a centralized repository for data, allowing multiple users and applications to access and share information simultaneously.
+
+
+<h3>3. Data Security and Integrity</h3>
+
+<b>Challenge:</b> File systems offer limited security and integrity features. Data can be easily lost, corrupted, or accessed by unauthorized users. <br>
+<b>Solution:</b> DBMS incorporates robust security mechanisms like user authentication, access controls, encryption, and backup and recovery features to protect data integrity and confidentiality.
+
+
+<h3>4. Data Dependence</h3>
+
+<b>Challenge:</b> Applications built on file-based systems are often tightly coupled with the data format, making it difficult to modify or restructure data without affecting the application.
+<b>DBMS Solution:</b> DBMS promotes data independence by separating data storage and manipulation from application logic. This allows changes to be made to the database structure without impacting applications.
+
+
+<h3>5. Atomicity and Consistency</h3> 
+<b>Challenge:</b> File systems lack support for transactional processing, which is crucial for ensuring data consistency and reliability in complex operations. <br>
+<b>DBMS Solution:</b> DBMS provides transaction management capabilities, guaranteeing that data modifications occur as a single, indivisible unit, preserving data integrity and consistency even in case of failures.
+</body>
+</html>
