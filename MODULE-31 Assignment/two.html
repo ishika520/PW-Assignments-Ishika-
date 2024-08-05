@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Component</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .button-container {
+      margin: 20px;
+      padding: 10px;
+      border: 2px solid #d76b6b;
+      border-radius: 7px;
+      background-color: #101010;
+    }
+
+    .button {
+      font-size: 20px;
+      color: #0edbb2;
+      background-color: #ceec91;
+      border: none;
+      padding: 12px 21px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .input-container {
+      margin-bottom: 11px;
+    }
+
+    .input-container input {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="input-container">
+    <input type="text" id="button-text" placeholder="Enter button text">
+    <button onclick="addButton()">Create Button</button>
+  </div>
+  <div id="button-container" class="button-container"></div>
+  <script>
+    function addButton() {
+      const buttonText = document.getElementById('button-text').value;
+      if (buttonText) {
+        createButton(buttonText, () => alert(`Button "${buttonText}" clicked!`));
+        document.getElementById('button-text').value = '';
+      } else {
+        alert('Please enter button text.');
+      }
+    }
+
+    function createButton(text, onClick) {
+      const buttonContainer = document.getElementById('button-container');
+      const buttonElement = document.createElement('button');
+      buttonElement.className = 'button';
+      buttonElement.textContent = text;
+      buttonElement.onclick = onClick;
+      buttonContainer.appendChild(buttonElement);
+    }
+  </script>
+</body>
+</html>
+

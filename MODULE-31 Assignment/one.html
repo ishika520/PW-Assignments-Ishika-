@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Person Component</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #person-container {
+      margin: 20px;
+      padding: 10px;
+      border: 2px solid #d02222;
+      border-radius: 7px;
+      background-color: #1911ef;
+    }
+
+    .person {
+      font-size: 20px;
+      color: #d5e809;
+    }
+
+    .input-container {
+      margin-bottom: 12px;
+    }
+
+    .input-container input {
+      margin-right: 11px;
+    }
+  </style>
+</head>
+<body>
+  <div class="input-container">
+    <input type="text" id="name" placeholder="Enter name">
+    <input type="number" id="age" placeholder="Enter age">
+    <button onclick="addPerson()">Add Person</button>
+  </div>
+  <div id="person-container"></div>
+  <script>
+    function addPerson() {
+      const name = document.getElementById('name').value;
+      const age = document.getElementById('age').value;
+      if (name && age) {
+        createPerson(name, age);
+        document.getElementById('name').value = '';
+        document.getElementById('age').value = '';
+      } else {
+        alert('Please enter both name and age.');
+      }
+    }
+
+    function createPerson(name, age) {
+      const personContainer = document.getElementById('person-container');
+      const personElement = document.createElement('p');
+      personElement.className = 'person';
+      personElement.textContent = `${name} is ${age} years old.`;
+      personContainer.appendChild(personElement);
+    }
+  </script>
+</body>
+</html>

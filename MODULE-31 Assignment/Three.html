@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Component</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .header-container {
+      margin: 20px;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      background-color: #0c0c0c;
+    }
+
+    .header {
+      font-size: 24px;
+      color: #ddb5b5;
+    }
+
+    .input-container {
+      margin-bottom: 11px;
+    }
+
+    .input-container input {
+      margin-right: 11px;
+    }
+  </style>
+</head>
+<body>
+  <div class="input-container">
+    <input type="text" id="header-title" placeholder="Enter header title">
+    <button onclick="addHeader()">Create Header</button>
+  </div>
+  <div id="header-container" class="header-container">
+    <h1 class="header" id="header-element"></h1>
+  </div>
+  <script>
+    function addHeader() {
+      const title = document.getElementById('header-title').value;
+      if (title) {
+        const headerElement = document.getElementById('header-element');
+        headerElement.textContent = title;
+        document.getElementById('header-title').value = '';
+      } else {
+        alert('Please enter a header title.');
+      }
+    }
+  </script>
+</body>
+</html>
+
